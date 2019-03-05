@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário de teste da API</title>
+	<link href="base.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>Formulário Teste - API Inserir Cliente</h1>
+
+<form action="/cliente_pj/inserir" method="post">
+<fieldset>
+	
+	<div class="campo">
+		<label for="labelcnpjID">CNPJ</label>
+		<input type="text" id="cnpjID" name="cnpjID" style="width: 20em"  value="" />
+	</div>
+
+	<fieldset class="grupo">
+		<div class="campo">
+			<label for="labelRazaoSocial">Razao Social</label>
+			<input type="text" id="RazaoSocial" name="RazaoSocial" style="width: 20em" value="" />
+		</div>
+		<div class="campo">
+			<label for="labelNomeFantasia">Nome Fantasia</label>
+			<input type="text" id="NomeFantasia" name="NomeFantasia" style="width: 20em" value="" />
+		</div>
+	</fieldset>	
+	
+
+
+	<div class="campo">
+		<label for="labelEnderecoPJ">Endereco PJ</label>
+		<input type="text" id="EnderecoPJ" name="EnderecoPJ" style="width: 41em" value="" />
+	</div>
+
+	<div class="campo">
+		<label for="labelInscrEstadual">Inscricao Estadual</label>
+		<input type="text" id="InscrEstadual" name="InscrEstadual" style="width: 41em" value="" />
+	</div>
+
+	<div class="campo">
+		<label for="telefone">Telefone</label>
+		<input type="text" id="Telefone" name="Telefone" style="width: 20em"  value="" />
+	</div>
+	
+	<div class="campo">
+		<label for="labelNomeResponsavel">Nome Responsavel</label>
+		<input type="text" id="NomeResponsavel" name="NomeResponsavel" style="width: 41em" value="" />
+	</div>
+
+	
+	<button class="botao submit" type="submit" name="submit">Enviar</button>
+	
+</fieldset>
+</form>
+
+</body>
+</html>
