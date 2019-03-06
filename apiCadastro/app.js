@@ -337,7 +337,8 @@ app.get('/cliente_pj/conta/por_cnpj/:id', (req, res) => {
 })
 
 
-//localhost:8080
-app.listen(8080, () => {
-    console.log("Servidor rodando em 8080")
+// ...
+//localhost:80
+app.listen(80, () => {
+    console.log("Servidor rodando em 80")
 })
