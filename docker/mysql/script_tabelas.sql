@@ -1,5 +1,5 @@
 
--- CREATE DATABASE financo;
+CREATE DATABASE financo;
 
 use financo;
 

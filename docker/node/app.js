@@ -11,7 +11,7 @@ app.use(morgan('short'))
 
 function getConnection () {
     return mysql.createConnection({
-        host: 'mysql',
+        host: 'localhost',
         user: 'root',
         database: 'financo',
         password: 'senhacadastro'
@@ -111,7 +111,7 @@ app.post('/cliente_pj/excluir', (req, res) => {
 app.get('/cliente_pj/listar_clientes', (req, res) => {
 
     const connection = mysql.createConnection({
-        host: 'mysql',
+        host: 'localhost',
         user: 'root',
         database: 'financo',
         password: 'senhacadastro'
@@ -257,7 +257,7 @@ app.post('/cliente_pj/conta/excluir', (req, res) => {
 app.get('/cliente_pj/conta/listar', (req, res) => {
     console.log('Listar Contas.')
     const connection = mysql.createConnection({
-        host: 'mysql',
+        host: 'localhost',
         user: 'root',
         database: 'financo',
         password: 'senhacadastro'
