@@ -1,7 +1,6 @@
--- drop table ClientePJ;
--- drop table ClienteContaBancaria;
 
 -- CREATE DATABASE financo;
+
 use financo;
 
 CREATE TABLE ClientePJ (
@@ -42,8 +41,10 @@ VALUES
 ('23456789000100','341','2222','321654-0','observacao3', 1),
 ('34567890000100','341','3333','789456-0','observacao4', 1);
 
+use financo;
 
 select * from ClientePJ;
 select * from ClienteContaBancaria;
 
-DELETE FROM ClientePJ WHERE cnpjID = 123456;
+
+
