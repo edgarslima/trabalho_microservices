@@ -11,10 +11,11 @@ app.use(morgan('short'))
 
 function getConnection () {
     return mysql.createConnection({
-        host: 'localhost',
+        host: 'mysql',
         user: 'root',
         database: 'financo',
-        password: 'senhacadastro'
+        password: 'senhacadastro',
+        insecureAuth: true
     })
 }
 
@@ -111,10 +112,11 @@ app.post('/cliente_pj/excluir', (req, res) => {
 app.get('/cliente_pj/listar_clientes', (req, res) => {
 
     const connection = mysql.createConnection({
-        host: 'localhost',
+        host: 'mysql',
         user: 'root',
         database: 'financo',
-        password: 'senhacadastro'
+        password: 'senhacadastro',
+        insecureAuth: true
     })
     const sqlQuery = "select * from ClientePJ where StatusCliente = 1"
     connection.query(sqlQuery, (err, rows, fields) => {
@@ -257,10 +259,11 @@ app.post('/cliente_pj/conta/excluir', (req, res) => {
 app.get('/cliente_pj/conta/listar', (req, res) => {
     console.log('Listar Contas.')
     const connection = mysql.createConnection({
-        host: 'localhost',
+        host: 'mysql',
         user: 'root',
         database: 'financo',
-        password: 'senhacadastro'
+        password: 'senhacadastro',
+        insecureAuth: true
     })
     const sqlQuery = "select * from ClienteContaBancaria where statusConta = 1" // where StatusCliente = 1"
     connection.query(sqlQuery, (err, rows, fields) => {
